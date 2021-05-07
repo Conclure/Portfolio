@@ -5,18 +5,18 @@
   background-color: var(--tertiary-color);
 }
 
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--secondary-color);
+}
+
 .text {
   text-align: center;
   color: var(--primary-color);
   font-family: "Roboto",arial,sans-serif;
-  font-size: 30px;
-}
-
-.header {
-  width: 100%;
-  padding: 60px;
-  border: 0;
-  margin: 0;
-  overflow: hidden;
-  background-color: var(--secondary-color);
 }

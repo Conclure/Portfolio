@@ -1,0 +1,22 @@
+:root {
+  --primary-color: hsl(196,100%,50%);
+  --secondary-color: hsl(196, 100%, 30%);
+  --tertiary-color: hsl(196, 100%, 10%);
+  background-color: var(--tertiary-color);
+}
+
+.text {
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "Roboto",arial,sans-serif;
+  font-size: 30px;
+}
+
+.header {
+  width: 100%;
+  padding: 60px;
+  border: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: var(--secondary-color);
+}

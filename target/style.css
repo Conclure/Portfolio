@@ -1,0 +1,21 @@
+body {
+  background-color: #002533;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  overflow: hidden;
+  background-color: #007099;
+}
+
+.text {
+  text-align: center;
+  color: #00bbff;
+  font-family: "Roboto", arial, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -18,5 +18,10 @@ header {
   font-family: "Roboto", arial, sans-serif;
   font-size: 200%;
 }
+@media screen and (max-width: 425px) {
+  .text {
+    font-size: 300%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

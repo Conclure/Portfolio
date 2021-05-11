@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="TS " type="ShConfigurationType" singleton="false">
+  <configuration default="false" name="TS " type="ShConfigurationType">
     <option name="SCRIPT_TEXT" value="npx tsc -w" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
     <option name="SCRIPT_PATH" value="$PROJECT_DIR$/start.bat" />

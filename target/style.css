@@ -1,9 +1,6 @@
 body {
-  background-color: #002533;
-}
-
-body {
   margin: 0;
+  background-color: #002533;
 }
 
 header {
@@ -18,10 +15,23 @@ header {
   font-family: "Roboto", arial, sans-serif;
   font-size: 200%;
 }
-@media screen and (max-width: 425px) {
-  .text {
-    font-size: 300%;
-  }
+
+#content {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-odd {
+  display: flex;
+}
+
+.content-even {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 /*# sourceMappingURL=style.css.map */

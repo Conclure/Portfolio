@@ -10,21 +10,31 @@ $laptop: 1024px
 $laptop-large: 1440px
 
 body
-  background-color: $tertiary-color
-
-body
   margin: 0
+  background-color: $tertiary-color
 
 header
   width: 100%
   overflow: hidden
   background-color: $secondary-color
 
-
 .text
   text-align: center
   color: $primary-color
   font-family: $font
   font-size: 200%
-  @media screen and (max-width: $mobile-large)
-    font-size: 300%
+
+#content
+  margin: auto
+  width: 50%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.content-odd
+  display: flex
+
+.content-even
+  display: flex
+  flex-direction: row-reverse

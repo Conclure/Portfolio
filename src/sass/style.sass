@@ -24,17 +24,24 @@ header
   font-family: $font
   font-size: 200%
 
-#content
+$content-slider-size: 300px
+
+.content-slider
   margin: auto
-  width: 50%
+  width: $content-slider-size
+  height: $content-slider-size
   display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
+  overflow-x: auto
+  -webkit-overflow-scrolling: touch
+  scroll-snap-type: x mandatory
+  scroll-snap-align: start
+  scroll-behavior: smooth
 
-.content-odd
-  display: flex
+.content-slider-component
+  width: $content-slider-size
+  flex-shrink: 0
+  height: 100%
 
-.content-even
-  display: flex
-  flex-direction: row-reverse
+.content-slider-image
+  width: $content-slider-size
+  height: $content-slider-size

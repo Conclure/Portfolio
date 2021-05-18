@@ -16,22 +16,27 @@ header {
   font-size: 200%;
 }
 
-#content {
+.content-slider {
   margin: auto;
-  width: 50%;
+  width: 300px;
+  height: 300px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
 }
 
-.content-odd {
-  display: flex;
+.content-slider-component {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
 }
 
-.content-even {
-  display: flex;
-  flex-direction: row-reverse;
+.content-slider-image {
+  width: 300px;
+  height: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */

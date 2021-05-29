@@ -13,28 +13,63 @@ body
   margin: 0
   background-color: $tertiary-color
 
-header
-  width: 100%
-  overflow: hidden
-  background-color: $secondary-color
+  .header
+    width: 100%
+    overflow: hidden
+    background-color: $secondary-color
 
-.text
-  text-align: center
-  color: $primary-color
-  font-family: $font
-  font-size: 200%
+  .title
+    text-align: center
+    color: $primary-color
+    font-family: $font
+    font-size: 200%
 
-#content
-  margin: auto
-  width: 50%
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
+  .container
+    position: relative
+    top: 100px
 
-.content-odd
-  display: flex
+    .slide-container
+      display: flex
+      align-content: center
+      justify-content: center
+      -webkit-user-select: none  /* Chrome all / Safari all */
+      -moz-user-select: none     /* Firefox all */
+      -ms-user-select: none      /* IE 10+ */
+      user-select: none          /* Likely future */
 
-.content-even
-  display: flex
-  flex-direction: row-reverse
+      .button
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        align-content: center
+        justify-content: center
+
+        p
+          text-align: center
+          border-style: solid
+          border-width: thin
+          border-radius: 5px
+          border-color: $primary-color
+          background-color: $secondary-color
+          color: #fff
+          width: 50px
+          font-family: $font
+
+      .button-next
+        left: 50px
+        order: 2
+
+      .button-prev
+        right: 50px
+        order: 0
+
+      .slide
+        display: none
+        order: 1
+
+        img
+          width: 500px
+          height: 500px
+          object-fit: cover
+          border-radius: 15px

@@ -11,33 +11,27 @@
 
 </head>
 <body>
-<header>
-    <h1 class="text">CONCLURE'S PORTFOLIO</h1>
+<header class="header">
+    <h1 class="title">CONCLURE'S PORTFOLIO</h1>
 </header>
-<div class="content-slider">
-    <div class="content-slider-component" id="slider-0">
-        <img src="https://agiltec.se/wp-content/uploads/blank-profile-picture-973460_640.png"
-             class="content-slider-image"
-             alt=""/>
-        <p>Text</p>
-    </div>
-    <div class="content-slider-component" id="slider-1">
-        <img  class="content-slider-image"
-              src="https://agiltec.se/wp-content/uploads/blank-profile-picture-973460_640.png"
-              alt=""/>
-        <p>Text</p>
-    </div>
-    <div class="content-slider-component" id="slider-2">
-        <img class="content-slider-image"
-             src="https://agiltec.se/wp-content/uploads/blank-profile-picture-973460_640.png"
-             alt=""/>
-        <p>Text</p>
-    </div>
-    <div class="content-slider-component" id="slider-3">
-        <img src="https://agiltec.se/wp-content/uploads/blank-profile-picture-973460_640.png"
-             class="content-slider-image"
-             alt=""/>
-        <p>Text</p>
+<div class="container">
+    <div class="slide-container">
+        <div class="button button-next">
+            <p onclick="nextImage()">NEXT</p>
+        </div>
+        <div class="button button-prev">
+            <p onclick="previousImage()">PREV</p>
+        </div>
+
+        <div class="slide">
+            <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"/>
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1612151855475-877969f4a6cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGQlMjBpbWFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"/>
+        </div>
+        <div class="slide">
+            <img src="https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/advice/maps-satellite-images/satellite-image-of-globe.jpg"/>
+        </div>
     </div>
 </div>
 <script type="text/javascript" src="../target/typescript/lazyload.js"></script>

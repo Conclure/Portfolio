@@ -37,17 +37,22 @@
 </header>
 <main>
   <div class="about-container">
-    <h1>About Me</h1>
-    <h2>Who I Am</h2>
+    <h1 onclick="send('https://github.com/Conclure/EventBuilder')" class="clickable">EventBuilder</h1>
+    <h2>Description</h2>
     <p>
-      My name is conclure. I live in Sweden and I am currently a student at International IT College
-      of Sweden.
+      This project was a project I made with Spigot API using Java of course. I tried utilizing Java's functional paradigm in this project.
     </p>
     <h2>
-      What I do
+      Goals
     </h2>
     <p>
-      I code Java. As of now I mainly develop software in Minecraft and Discord.
+      The goals here was to create a framework on top of the Spigot Event API. Spigot Event API uses reflection which can be kinda slow, so an improvment would be to just use an event executor which delegates a given consumer of an event type. The framework also embraces the builder pattern.
+    </p>
+    <h2>
+      Result
+    </h2>
+    <p>
+      The result was good. When I tested the finished product it was clearly faster than the normal Spigot Event API.
     </p>
   </div>
 </main>

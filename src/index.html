@@ -1,80 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Conclure's personal portfolio website.">
-    <title>Conclure's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
-    <link rel="preload" href="../target/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-    <script type="text/javascript" src="../target/typescript/preload.js" async></script>
-    <noscript>
-        <link rel="stylesheet" href="../target/style.css">
-    </noscript>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Conclure's personal portfolio website." name="description">
+  <meta name="theme-color" content="#000d12"/>
+  <title>Conclure's Portfolio</title>
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+        rel="stylesheet">
+  <link as="style" href="../target/style.css" onload="this.onload=null;this.rel='stylesheet'"
+        rel="preload"/>
+  <noscript>
+    <link href="../target/style.css" rel="stylesheet">
+  </noscript>
 </head>
 <body>
 <header>
-    <div class="title">
-        <a href="index.html">CONCLURE'S PORTFOLIO</a>
-    </div>
-    <ul class="navbar">
-        <li class="navbar-item">
-            <a href="about.html">ABOUT</a>
-        </li>
-        <li class="navbar-item">
-            <a href="#">PROJECT1</a>
-        </li>
-        <li class="navbar-item">
-            <a href="#">PROJECT2</a>
-        </li>
-        <li class="navbar-item">
-            <a href="#">RULES</a>
-        </li>
-    </ul>
+  <div class="title">
+    <a href="index.html">CONCLURE'S PORTFOLIO</a>
+  </div>
+  <ul class="navbar">
+    <li class="navbar-item">
+      <a href="about.html">ABOUT</a>
+    </li>
+    <li class="navbar-item">
+      <a href="project1.html">PROJECT1</a>
+    </li>
+    <li class="navbar-item">
+      <a href="project2.html">PROJECT2</a>
+    </li>
+    <li class="navbar-item">
+      <a href="rules.html">LAWS</a>
+    </li>
+  </ul>
 </header>
 <main>
-<div class="container">
+  <div class="container">
     <div class="slide-container">
-        <div class="button button-next">
-            <p onclick="nextImage()">NEXT</p>
+      <div class="button button-next">
+        <p onclick="nextImage()">NEXT</p>
+      </div>
+      <div class="button button-prev">
+        <p onclick="previousImage()">BACK</p>
+      </div>
+      <div class="slide">
+        <div class="slide-item">
+          <img alt="Picture of my dog representing me."
+               src="https://cdn.discordapp.com/attachments/315100201335390229/848255559102627850/unknown.png"/>
         </div>
-        <div class="button button-prev">
-            <p onclick="previousImage()">BACK</p>
+        <div class="slide-item slide-text"
+             onclick="send('about.html')">
+          <h2>About Me</h2>
+          <p>I am a creative Java developer who...</p>
         </div>
-
-        <div class="slide">
-            <div class="slide-item">
-                <img class="hoverable" alt="Picture of my dog representing me."
-                     src="https://cdn.discordapp.com/attachments/315100201335390229/848255559102627850/unknown.png"/>
-            </div>
-            <div class="slide-item slide-text"
-                 onclick="send('about.html')">
-                <h2>About Me</h2>
-                <p>I am a creative Java developer who...</p>
-            </div>
+      </div>
+      <div class="slide">
+        <div class="slide-item">
+          <img alt="An image of a screen which displays code on it."
+               src="https://cdn.discordapp.com/attachments/315100201335390229/848662343054786560/unknown.png"/>
         </div>
-        <div class="slide">
-            <div class="slide-item">
-                <img alt="alt"
-                     src="https://images.unsplash.com/photo-1612151855475-877969f4a6cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGQlMjBpbWFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"/>
-            </div>
-            <div class="slide-item">
-                <p>TEXT</p>
-            </div>
+        <div class="slide-item slide-text"
+             onclick="send('about.html')">
+          <h2>DeluxeAsyncJoinLeaveMessage</h2>
+          <p>A project for fun...</p>
         </div>
-        <div class="slide">
-            <div class="slide-item">
-                <img alt="alt"
-                     src="https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/advice/maps-satellite-images/satellite-image-of-globe.jpg"/>
-            </div>
-            <div class="slide-item">
-                <p>TEXT</p>
-            </div>
+      </div>
+      <div class="slide">
+        <div class="slide-item">
+          <img alt="An image of a screen which displays coffee on it."
+               src="https://cdn.discordapp.com/attachments/315100201335390229/848663404289065001/unknown.png"/>
         </div>
+        <div class="slide-item slide-text"
+             onclick="send('about.html')">
+          <h2>EventBuilder</h2>
+          <p>A project embracing the functional paradigm...</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-item">
+          <img alt="A photo of a hammer."
+               src="https://cdn.discordapp.com/attachments/315100201335390229/848584009788555314/unknown.png"/>
+        </div>
+        <div class="slide-item slide-text"
+             onclick="send('rules.html')">
+          <h2>Laws and Rules</h2>
+          <p>This website is adhereing to laws and rules...</p>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 </main>
-<script type="text/javascript" src="../target/typescript/lazyload.js" async></script>
+<script async src="../target/typescript/lazyload.js" type="text/javascript"></script>
 </body>
 </html>

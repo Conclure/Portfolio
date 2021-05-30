@@ -23,7 +23,7 @@ const setImage = (indexTranformer: (i: number) => number) => {
   }
 
   if (index < 0) {
-    index = length-1
+    index = length - 1
   }
 
   for (let i = 0; i < slides.length; i++) {
@@ -40,11 +40,11 @@ const setImage = (indexTranformer: (i: number) => number) => {
 }
 
 const previousImage = () => {
-  setImage(i => i-1)
+  setImage(i => i - 1)
 }
 
 const nextImage = () => {
-  setImage(i => i+1)
+  setImage(i => i + 1)
 }
 
 const onLazyload = () => {

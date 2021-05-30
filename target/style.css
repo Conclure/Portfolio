@@ -13,7 +13,6 @@ body header {
   justify-content: space-between;
 }
 body header .navbar, body header .title {
-  list-style-type: none;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -39,6 +38,11 @@ body header .navbar a:hover, body header .title a:hover {
 body header .navbar {
   flex-grow: 2;
   justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+}
+body header .navbar .navbar-item {
+  font-size: 75%;
 }
 body header .title {
   flex-grow: 1;
@@ -93,12 +97,12 @@ body .container .slide-container .slide .slide-text {
   cursor: pointer;
   font-family: "Roboto", arial, sans-serif;
   background-color: #003447;
-  width: 200px;
-  border-radius: 15px;
+  width: 500px;
+  border-radius: 25px;
   color: #9fe5ff;
 }
 body .container .slide-container .slide .slide-text:hover {
-  color: #fff;
+  color: white;
 }
 body .container .slide-container .slide .slide-item p {
   font-style: italic;
@@ -114,9 +118,31 @@ body .about-container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: white;
   font-family: "Roboto", arial, sans-serif;
-  padding: 100px;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  padding: 0;
+  text-decoration: none;
+}
+body .about-container a {
+  color: white;
+}
+body .about-container a:visited {
+  text-decoration: underline;
+}
+body .about-container a:hover {
+  text-decoration: underline;
+}
+body .about-container a:focus {
+  text-decoration: underline;
+}
+body .about-container a:hover, body .about-container a:active {
+  text-decoration: underline;
+}
+body .clickable {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 @media (max-width: 1024px) {
@@ -127,6 +153,14 @@ body .about-container {
     justify-content: center;
     flex-direction: column;
     flex-grow: 1;
+  }
+  body .container .slide-container .button {
+    display: none;
+  }
+  body .about-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin: 0;
   }
 }
 

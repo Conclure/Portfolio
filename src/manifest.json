@@ -1,0 +1,7 @@
+{
+  "short_name": "Portfolio",
+  "name": "Conclure's Portfolio",
+  "start_url": "/",
+  "background_color": "#000d12",
+  "display": "standalone"
+}

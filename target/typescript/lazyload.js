@@ -4,7 +4,11 @@ var performInitialContainerLoad = function () {
     if (slides.length == 0) {
         throw new RangeError();
     }
-    slides[0].style.display = "flex";
+    var style = slides[0].style;
+    style.display = "flex";
+    style.alignItems = "center";
+    style.justifyContent = "center";
+    style.flexDirection = "column";
 };
 var setImage = function (indexTranformer) {
     var length = slides.length;
@@ -16,11 +20,15 @@ var setImage = function (indexTranformer) {
         index = length - 1;
     }
     for (var i = 0; i < slides.length; i++) {
+        var style = slides[i].style;
         if (i == index) {
-            slides[i].style.display = "flex";
+            style.display = "flex";
+            style.alignItems = "center";
+            style.justifyContent = "center";
+            style.flexDirection = "column";
             continue;
         }
-        slides[i].style.display = "none";
+        style.display = "none";
     }
 };
 var previousImage = function () {
@@ -33,5 +41,8 @@ var onLazyload = function () {
     if (slides.length != 0) {
         performInitialContainerLoad();
     }
+};
+var send = function (url) {
+    window.location.href = url;
 };
 onLazyload();

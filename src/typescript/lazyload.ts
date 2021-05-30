@@ -6,7 +6,11 @@ const performInitialContainerLoad = () => {
     throw new RangeError();
   }
 
-  slides[0].style.display = "flex"
+  let style = slides[0].style;
+  style.display = "flex"
+  style.alignItems = "center"
+  style.justifyContent = "center"
+  style.flexDirection = "column"
 }
 
 const setImage = (indexTranformer: (i: number) => number) => {
@@ -23,11 +27,15 @@ const setImage = (indexTranformer: (i: number) => number) => {
   }
 
   for (let i = 0; i < slides.length; i++) {
+    let style = slides[i].style;
     if (i == index) {
-      slides[i].style.display = "flex"
+      style.display = "flex"
+      style.alignItems = "center"
+      style.justifyContent = "center"
+      style.flexDirection = "column"
       continue
     }
-    slides[i].style.display = "none"
+    style.display = "none"
   }
 }
 
@@ -43,6 +51,10 @@ const onLazyload = () => {
   if (slides.length != 0) {
     performInitialContainerLoad()
   }
+}
+
+const send = (url: string) => {
+  window.location.href = url
 }
 
 onLazyload()

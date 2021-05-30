@@ -1,7 +1,8 @@
-$primary-color: hsl(196,100%,50%)
-$secondary-color: hsl(196, 100%, 30%)
-$tertiary-color: hsl(196, 100%, 10%)
+$primary-color: #9fe5ff //#9fe5ff
+$secondary-color: #003447 //#003447
+$tertiary-color: #000d12 //#000d12
 $font: "Roboto",arial,sans-serif
+$font-size: 200%
 $mobile-small: 320px
 $mobile-medium: 375px
 $mobile-large: 425px
@@ -11,18 +12,49 @@ $laptop-large: 1440px
 
 body
   margin: 0
+  padding: 0
   background-color: $tertiary-color
+  color: white
 
-  .header
-    width: 100%
+  header
+    padding: 20px
     overflow: hidden
     background-color: $secondary-color
+    display: flex
+    flex-direction: row
+    justify-content: space-between
 
-  .title
-    text-align: center
-    color: $primary-color
-    font-family: $font
-    font-size: 200%
+    .navbar, .title
+      list-style-type: none
+      text-align: center
+      display: flex
+      flex-direction: row
+      align-items: center
+
+      a
+        color: $primary-color
+        font-family: $font
+        font-size: $font-size
+        text-decoration: none
+        font-weight: bolder
+        cursor: pointer
+        -webkit-user-select: none  /* Chrome all / Safari all */
+        -moz-user-select: none     /* Firefox all */
+        -ms-user-select: none      /* IE 10+ */
+        user-select: none          /* Likely future */
+        transition: 0.3s
+
+      a:hover
+        color: #fff
+        transition: 0.3s
+
+    .navbar
+      flex-grow: 2
+      justify-content: space-evenly
+
+    .title
+      flex-grow: 1
+      justify-content: left
 
   .container
     position: relative
@@ -30,7 +62,6 @@ body
 
     .slide-container
       display: flex
-      align-content: center
       justify-content: center
       -webkit-user-select: none  /* Chrome all / Safari all */
       -moz-user-select: none     /* Firefox all */
@@ -40,37 +71,71 @@ body
       .button
         position: relative
         display: flex
-        flex-direction: column
         align-items: center
-        align-content: center
-        justify-content: center
 
         p
           text-align: center
-          border-style: solid
-          border-width: thin
-          border-radius: 5px
-          border-color: $primary-color
+          border-radius: 25px
           background-color: $secondary-color
-          color: #fff
-          width: 50px
+          color: $primary-color
+          width: 100px
           font-family: $font
+          font-size: 125%
+          font-weight: bold
+          cursor: pointer
+          transition: 0.3s
+        p:hover
+          color: #fff
+          transition: 0.3s
 
       .button-next
-        left: 50px
+        left: 25px
         order: 2
 
       .button-prev
-        right: 50px
+        right: 25px
         order: 0
 
       .slide
         display: none
-        order: 1
 
-        img
-          width: 500px
-          height: 500px
-          object-fit: cover
+        .slide-text
+          text-align: center
+          cursor: pointer
+          font-family: $font
+          background-color: $secondary-color
+          width: 200px
           border-radius: 15px
+          color: $primary-color
 
+        .slide-text:hover
+          color: #fff
+
+        .slide-item
+          p
+            font-style: italic
+
+          img
+            width: 500px
+            height: 500px
+            object-fit: cover
+            border-radius: 25px
+
+  .about-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    color: #fff
+    font-family: $font
+    padding: 100px
+
+@media (max-width: $laptop)
+  body
+    header
+      flex-direction: column
+
+      .title, .navbar
+        justify-content: center
+        flex-direction: column
+        flex-grow: 1

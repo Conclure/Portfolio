@@ -42,7 +42,7 @@ body header .navbar {
   padding: 0;
 }
 body header .navbar .navbar-item {
-  font-size: 75%;
+  font-size: 85%;
 }
 body header .title {
   flex-grow: 1;
